@@ -15,5 +15,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd TestRepo
+            cd ~/jdav2k.github.io
             git pull
+            rm -r ~/../pub/* -f
+            cp -r ~/jdav2k.github.io/ ~/../pub/
