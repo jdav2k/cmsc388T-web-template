@@ -1,4 +1,4 @@
-name: clean workflow
+name: Clean workflow
 on:
   workflow_dispatch:
 jobs:
@@ -15,4 +15,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
               unalias rm
-              rm -rf cmsc388T-web-template
+              rm -rf ~/jdav2k.github.io
+              rm -r ~/../pub/* -f
