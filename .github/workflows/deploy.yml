@@ -18,4 +18,5 @@ jobs:
             cd ~/jdav2k.github.io
             git pull
             rm -r ~/../pub/* -f
+            unalias cp
             cp -r ~/jdav2k.github.io/ ~/../pub/
